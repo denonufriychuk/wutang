@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Музыкальный журнал</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <header>Музыкальный журнал</header>
+    <nav>
+        <ul class="top-menu">
+		    <li><a href="news_1.html">Новости</a></li>
+		    <li><a href="genres_1.html">Жанры</a>
+                <ul>
+                    <li><a href="genres_1.html#hip-hop1">Свистки и бумажки</a></li>
+                </ul>
+            </li>
+            <li><a href="rating.html">Рейтинги</a></li>
+		    <li class="active">Ваши предпочтения</li>
+            <li><a href="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF?si=4797eccf9e544249" target="_blank"><img id="spotify" src="images/spotify.png"></a></li>
+        </ul>
+    </nav>
+    <div id="heading">
+        <h1>Твои предпочтения</h1>
+    </div>
+    <div>
+        <form action="http://g06u33.nn2000.info/cgi-bin/form_action.py" method='get' target='_blank'>
+            <fieldset>
+                <p>Фамилия: <input type="text" name="surname"></p>
+                <p>Имя: <input type="text" name="name"></p>
+                <p>Номер телефона: <input type="number" name="phone number"></p>
+                <p>Электронная почта: <input type="email" name="mail"></p>
+                <p>Дата заполнения: <input type="date" name="date"></p>
+                <p>
+                    <input type="hidden" name="000_file_name" value="Onufriychuk_1.txt">
+                    <input type="hidden" name="010_mode" value="w">
+                    <input type="Submit" name="submit" value="Отправить">
+                </p>
+            </fieldset>
+        </form>
+        <p>
+            <a href="http://g06u33.nn2000.info/tmp/Onufriychuk_1.txt" target="_blank">Ссылка на файл</a>
+        </p>
+        <form action="http://g06u33.nn2000.info/cgi-bin/form_action.py" method='get' target='_blank'>
+            <fieldset>
+                <p>Любимый жанр музыки:
+                    Хип-хоп<input type="radio" name="genre">
+                    R&B<input type="radio" name="genre">
+                    Рок<input type="radio" name="genre">
+                    Джаз<input type="radio" name="genre">
+                    Инди<input type="radio" name="genre">
+                    Поп-музыка<input type="radio" name="genre">
+                    Другой: <input type="text" name="genre">
+                </p>
+                <p>Любимые исполнители:
+                    <input type="text" name="artists">
+                </p>
+                <p>Умеете ли вы играть на музыкальных инструментах?
+                Да, на <input type="text" name="instruments">
+                    Нет <input type="radio" name="instruments">
+                </p>
+                <p>Расскажите о последнем музыкальном мероприятии, на котором вы побывали: <br>
+                    <textarea name="textarea" rows="4" cols="70"></textarea>
+                </p>
+                <p>
+                    <input type="hidden" name="000_file_name" value="Onufriychuk_2.txt">
+                    <input type="hidden" name="010_mode" value="w">
+                    <input type="Submit" name="submit" value="Отправить">
+                </p>
+            </fieldset>
+        </form>
+        <p>
+            <a href="http://g06u33.nn2000.info/tmp/Onufriychuk_2.txt" target="_blank">Ссылка на файл</a>
+        </p>
+    </div>
+</div>
+    <footer>
+    <div>
+        <p>Музыкальный журнал 2021</p>
+        <p>Все права защищены</p>
+    </div>
+</footer>
+</body>
+</html>
